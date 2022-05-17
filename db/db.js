@@ -13,12 +13,12 @@
    console.log('Connected');
  });
 
-const sql = "SELECT * FROM MAMBER";
-db.query(sql, (err, rows, fields) => {
-  if(err) console.log(err);
-  console.log('rows',rows);
-  console.log('fields',fields);
-});
+// const sql = "SELECT * FROM MAMBER";
+// db.query(sql, (err, rows, fields) => {
+//   if(err) console.log(err);
+//   console.log('rows',rows);
+//   console.log('fields',fields);
+// });
 
 
 

@@ -1,11 +1,21 @@
 form { margin: 0px 10px; }
 
+body {
+  background-color: #ffff;
+  position: relative;
+  left: 500px;
+}
+
 h2 {
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
-.container { max-width: 360px; }
+.container { 
+  text-align: center;
+  max-width: 360px; 
+  
+}
 
 .divider {
   text-align: center;
@@ -16,6 +26,10 @@ h2 {
 .divider hr {
   margin: 7px 0px;
   width: 35%;
+}
+
+.form-group{
+  margin: 10px
 }
 
 .left { float: left; }
