@@ -16,7 +16,7 @@ const id = document.querySelector("#id"),
       // console.log(btn);
 
 
-let login = () => {
+let register = () => {
   if (!id.value) return alert("이름을 입력하시오!");
   if (!pswd.value) return alert("비밀번호를 입력하시오"); 
   if (pswd.value != cf_pswd.value) return alert("비밀번호를 다시확인해주세요");
@@ -37,7 +37,7 @@ let login = () => {
     headers: {
       "Context-Type" : "application/json",
     },
-    body: JSON.stringify(req)
+    body: JSON.stringify(req),
 
   }).then((res) => res.json())
   .then((res) => {
@@ -52,7 +52,9 @@ let login = () => {
     console.error("회원가입중 에러 발생");
   })
 
+  console.log(req);
+
 }
  
 
-btn.addEventListener("click",login);
+btn.addEventListener("click",register);

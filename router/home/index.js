@@ -9,5 +9,6 @@ router.get("/register", ctrl.views.register);
 router.get("/login",ctrl.views.login);
 
 router.post("/register",ctrl.process.register);
+router.post("/login",ctrl.process.login);
 
 module.exports = router;
